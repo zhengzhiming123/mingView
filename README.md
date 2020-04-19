@@ -1,4 +1,5 @@
-# ming-view
+# ming-view 基于vue2 的前端组件库
+[相应文档地址](http://51discount.cn/mingview)
 
 ## Project setup
 ```
