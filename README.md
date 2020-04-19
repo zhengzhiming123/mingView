@@ -1,4 +1,4 @@
-# ming-ui
+# ming-view
 
 ## Project setup
 ```
