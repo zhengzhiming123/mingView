@@ -1,0 +1,24 @@
+.m-rate{
+    height: 20px;
+    line-height: 1;
+    .m-rate_item{
+        display: inline-block;
+        position: relative;
+        transition: all 0.3s;
+        cursor: pointer;
+        .m-rate_icon{
+            margin-right: 6px;
+            font-size: 14px;
+            &.m-icon-star{
+                color: #c0c4cc;
+            }
+            &.m-icon-star-on{
+                font-size: 14.8px;
+                color: #F7BA2A;
+            }
+        }
+    }
+    .m-rate_text{
+        font-size: 14px;
+    }
+}

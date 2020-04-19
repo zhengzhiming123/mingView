@@ -1,0 +1,70 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+}
+.m-input{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    .m-input_inner{
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #dcdfe6;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 15px;
+        width: 100%;
+        outline: none;
+        &:focus{
+            border-color: #409eff;
+        }
+    }
+    &.is-disabled{
+        .m-input_inner{
+            background-color: #f5f7fa;
+            border-color: #e4e7ed;
+            color: #c0c4cc;
+            cursor: not-allowed;
+        }
+    }
+    .m-textarea{
+        width: 100%;
+        padding: 5px 15px;
+        color:#606266;
+        font-size: 14px;
+        line-height: 1.5;
+        background-color: #fff;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        outline: none;
+        &:focus{
+            border-color: #409eff;
+        }
+    }
+    .m-input_suffix,.m-input_prefix{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        color: #c0c4cc;
+        text-align: center;
+        transition: all 0.3s;
+        .m-input_icon{
+            display: inline-block;
+            font-size: 14px;
+            width: 25px;
+            line-height: 36px;
+        }
+    }
+    .m-input_prefix{
+        left: 5px;
+    }
+    .m-input_suffix{
+        right: 5px;
+    }
+    &.m-input--prefix{
+        .m-input_inner{
+            padding: 0 30px;
+        }
+    }
+}

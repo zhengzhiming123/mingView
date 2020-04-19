@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html,body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+
+.app{
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #dcdfe6
+}
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #409eff;
+}
+.container{
+    height: calc(100% - 60px);
+    position: relative;
+}
+.aside{
+    width: 240px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.aside_nav{
+    padding-top: 30px;
+}
+.aside_title{
+    font-size: 16px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.aside_list{
+    li{
+        color: #444;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        &.current,&:hover{
+            color: #409eff;
+        }
+    }
+}
+.content{
+    padding-top: 30px;
+    margin-left: 240px;
+    padding-bottom: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+.demo_subtit{
+    margin: 30px 0 20px;
+    color: #1f2f3d;
+}
+.demo_box{
+    border: 1px solid #ebebeb;
+    .demo_list{
+        padding: 20px;
+        .m-tag{
+            margin-right: 10px;
+        }
+        &.btn_list{
+            .m-btn+.m-btn{
+                margin-left: 20px;
+            }
+            .icon-list{
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid #ebebeb;
+                li{
+                    width: 20%;
+                    height: 120px;
+                    padding: 25px 0;
+                    box-sizing: border-box;
+                    text-align: center;
+                    border-right: 1px solid #ebebeb;
+                    border-bottom: 1px solid #ebebeb;
+                    margin-right: -1px;
+                    margin-bottom: -1px;
+                    .icon-item{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .meta{
+        background: #fafafa;
+        border-top: 1px solid #eaeefb;
+        line-height: 24px;
+        .desc{
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #666;
+            word-break: break-word;
+            margin: 15px;
+            background-color: #fff;
+        }
+    }
+    .m-input{
+        width: 240px;
+        .m-textarea{
+            width: 400px;
+        }
+    }
+    .m-inputnumber{
+        .m-input{
+            width: 100%;
+        }
+    }
+    .m-switch{
+        margin-right: 20px;
+    }
+}

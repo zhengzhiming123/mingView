@@ -1,0 +1,38 @@
+.m-switch{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    .m-switch_core{
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        border: 1px solid #dcdfe6;
+        border-radius: 10px;
+        background: #dcdfe6;
+        box-sizing: border-box;
+        transition: all .3s;
+        .m-switch_button{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 100%;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            transition: all .3s;
+        }
+    }
+    &.is-checked{
+        .m-switch_core{
+            background: #409eff;
+            border-color: #409eff;
+            .m-switch_button{
+                transform: translate3d(20px, 0px, 0px)
+            }
+        }
+    }
+    &.is-disabled{
+        opacity: .6;
+        cursor: not-allowed;
+    }
+}

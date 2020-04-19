@@ -1,0 +1,61 @@
+.m-transfer{
+    font-size: 14px;
+    .m-transfer-panel{
+        border: 1px solid #ebeef5;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        width: 200px;
+        box-sizing: border-box;
+        position: relative;
+        .m-transfer-panel_header{
+            height: 40px;
+            line-height: 40px;
+            background: #f5f7fa;
+            padding-left: 15px;
+            border-bottom: 1px solid #ebeef5;
+            .m-checkbox_text{
+                color: #303133;
+                font-size: 14px;
+            }
+        }
+        .m-transfer-panel_body{
+            height: 246px;
+            .m-transfer-panel_list{
+                padding: 6px 0;
+                overflow: auto;
+                ul{
+                    padding-left: 15px;
+                    li:hover{
+                        color: #409eff
+                    }
+                }
+            }
+        }
+    }
+    .m-transfer_buttons{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 30px;
+        .m-transfer_button{
+            display: block;
+            padding: 10px;
+            border-radius: 50%;
+            outline: none;
+            font-size: 14px;
+            i{
+                font-size: 14px;
+            }
+            &.is-disabled{
+                background-color: #f5f7fa;
+                color: #c0c4cc;
+                border: 1px solid #dcdfe6;
+            }
+            &:first-child{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

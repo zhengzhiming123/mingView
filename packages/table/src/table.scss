@@ -1,0 +1,98 @@
+.m-table{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    font-size: 14px;
+    background: #fff;
+    color: #606266;
+    box-sizing: border-box;
+    .m-table_header-wrap{
+        overflow: hidden;
+        .m-table_header{
+            width: 100%;
+            table-layout: fixed;
+            position: relative;
+            th{
+                text-align: left;
+                padding: 12px 0;
+                border-bottom: 1px solid #ebeef5;
+                background: #fff;
+                .cell{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .m-table_body-wrap{
+        overflow: hidden;
+        .m-table_body{
+            width: 100%;
+            table-layout: fixed;
+            tr{
+                &.is-stripe{
+                    td{
+                        background: #fafafa;
+                    }
+                }
+                &.hover-row{
+                    td{
+                        background: #f5f7fa;
+                        &.is-hidden{
+                            background: transparent;
+                        }
+                    }
+                }
+                &.current-row{
+                    td{
+                        background: #ecf5ff
+                    }
+                }
+                td{
+                    text-align: left;
+                    padding: 12px 0;
+                    border-bottom: 1px solid #ebeef5;
+                    background: #fff;
+                    &.is-hidden{
+                        .cell{
+                            visibility: hidden;
+                        }
+                    }
+                    .cell{
+                        padding: 0 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .m-table_fixed-wrap{
+        width: 300px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: auto;
+        bottom: 0;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,.12);
+        .m-table_header-wrap,.m-table_body-wrap{
+            position: absolute;
+            left: auto;
+            right: 0;
+        }
+        .m-table_body-wrap{
+            top: 41.5px;
+            .m-table_body{
+                position: relative;
+            }
+        }
+    }
+    .m-table_fixed-patch{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 17px;
+        height: 44px;
+        background: #fff;
+    }
+}

@@ -1,0 +1,49 @@
+.m-inputnumber{
+    display: inline-block;
+    width: 180px;
+    line-height: 34px;
+    position: relative;
+    .m-inputnumber_decrease,.m-inputnumber_increase{
+        width: 40px;
+        position: absolute;
+        top: 1px;
+        background: #f5f7fa;
+        z-index: 1;
+        text-align: center;
+        color: #999;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .m-inputnumber_decrease{
+        left: 1px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-right: 1px solid #dcdfe6;
+    }
+    .m-inputnumber_increase{
+        right: 1px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-left: 1px solid #dcdfe6;
+    }
+    .m-input{
+        display: block;
+        .m-input_inner{
+            padding: 0 50px;
+            text-align: center;
+        }
+    }
+    &.is-disabled{
+        .m-inputnumber_decrease,.m-inputnumber_increase{
+            border-color: #e4e7ed;
+            color: #e4e7ed;
+            cursor: not-allowed;
+        }
+        .m-input_inner{
+            background-color: #f5f7fa;
+            border-color: #f5f7fa;
+            color: #c0c4cc;
+            cursor: not-allowed;
+        }
+    }
+}
